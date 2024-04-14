@@ -9,10 +9,10 @@ export const RestaurantsDetail = ({ route }) => {
   const [lunchExpanded, setLunchExpanded] = useState(false);
   const [dinnerExpanded, setDinnerExpnaded] = useState(false);
   const [drinksExpanded, setDrinksExpnaded] = useState(false);
-  const { restaurant } = route.params;
+  const { restaurants } = route.params;
   return (
     <SafeArea>
-      <RestaurantInfoCard restaurant={restaurant} />
+      <RestaurantInfoCard restaurant={restaurants} />
       <ScrollView>
         <List.Accordion
           title="BreakFast"
