@@ -9,6 +9,7 @@ import { FavouritesContextProvider } from "../../services/restaurants/favourites
 import { LocationContextProvider } from "../../services/restaurants/location.context";
 import { SafeArea } from "../../components/safe-area.component";
 import { MapScreen } from "../../features/map/map.screen";
+import { SettingsNavigator } from "./settings.navigator";
 const Tab = createBottomTabNavigator();
 
 const TAB_ICON = {
@@ -54,7 +55,7 @@ export const AppNavigator = () => (
           />
           <Tab.Screen
             name="Settings"
-            component={Settings}
+            component={SettingsNavigator}
             options={{ headerShown: false }}
           />
           <Tab.Screen
